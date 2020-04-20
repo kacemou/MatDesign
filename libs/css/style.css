@@ -4969,19 +4969,12 @@ ul.uk-nav-sub {
  * 4. Style
  */
 .uk-dropdown {
-  /* 1 */
   display: none;
-  /* 2 */
   position: absolute;
   z-index: 1020;
-  /* 3 */
-  box-sizing: border-box;
   min-width: 200px;
-  /* 4 */
   padding: 25px;
   background: #fff;
-  color: #666;
-  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
 }
 /* Show */
 .uk-dropdown.uk-open {

@@ -2223,27 +2223,11 @@ select.uk-form-width-xsmall {
  *    unaffected by the padding on different breakpoints. It's important for the size modifiers.
  */
 .uk-container {
-  /* 1 */
-  box-sizing: content-box;
-  max-width: 1200px;
+  max-width: 1140px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-}
-/* Phone landscape and bigger */
-@media (min-width: 640px) {
-  .uk-container {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-}
-/* Tablet landscape and bigger */
-@media (min-width: 960px) {
-  .uk-container {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
 }
 /*
  * Micro clearfix

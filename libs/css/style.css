@@ -3927,7 +3927,6 @@ ul.uk-nav-sub {
 .uk-navbar {
   display: -webkit-flex;
   display: flex;
-  /* 1 */
   position: relative;
 }
 /* Container
@@ -4034,7 +4033,7 @@ ul.uk-nav-sub {
 .uk-navbar-item,
 .uk-navbar-toggle {
   /* 1 */
-  -webkit-display: inline-flex;
+  display: -webkit-inline-flex;
   display: inline-flex;
   -webkit-justify-content: center;
   justify-content: center;

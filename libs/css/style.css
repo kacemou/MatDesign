@@ -1122,7 +1122,7 @@ button.uk-icon:not(:disabled) {
   background: transparent;
   color: inherit;
   vertical-align: middle;
-  -webkit-display: inline-flex;
+  display: -webkit-inline-flex;
   display: inline-flex;
   -webkit-justify-content: center;
   justify-content: center;
@@ -1148,31 +1148,16 @@ button.uk-icon:not(:disabled) {
 /* ========================================================================
    Component: Form Range
  ========================================================================== */
-/*
- * 1. Normalize and defaults
- * 2. Prevent content overflow if a fixed width is used
- * 3. Take the full width
- * 4. Remove default style
- * 5. Remove white background in Chrome
- * 6. Remove padding in IE11
- */
 .uk-range {
-  /* 1 */
   box-sizing: border-box;
   margin: 0;
   vertical-align: middle;
-  /* 2 */
   max-width: 100%;
-  /* 3 */
   width: 100%;
-  /* 4 */
   -webkit-appearance: none;
-  /* 5 */
   background: transparent;
-  /* 6 */
   padding: 0;
 }
-/* Focus */
 .uk-range:focus {
   outline: none;
 }
@@ -1186,9 +1171,6 @@ button.uk-icon:not(:disabled) {
   border-color: transparent;
   color: transparent;
 }
-/*
- * Improves consistency of cursor style for clickable elements
- */
 .uk-range:not(:disabled)::-webkit-slider-thumb {
   cursor: pointer;
 }
@@ -3945,9 +3927,8 @@ ul.uk-nav-sub {
  * 1. Create position context to center navbar group
  */
 .uk-navbar {
-  -webkit-display: flex;
+  display: -webkit-flex;
   display: flex;
-  /* 1 */
   position: relative;
 }
 /* Container
@@ -3973,8 +3954,9 @@ ul.uk-nav-sub {
 .uk-navbar-center,
 .uk-navbar-center-left > *,
 .uk-navbar-center-right > * {
+  display: -webkit-flex;
   display: flex;
-  /* 1 */
+  -webkit-align-items: center;
   align-items: center;
 }
 /*
@@ -3991,7 +3973,6 @@ ul.uk-nav-sub {
 .uk-navbar-center:only-child {
   margin-left: auto;
   margin-right: auto;
-  /* 1 */
   position: relative;
 }
 .uk-navbar-center:not(:only-child) {
@@ -3999,10 +3980,7 @@ ul.uk-nav-sub {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* 2 */
   width: max-content;
-  box-sizing: border-box;
-  /* 3 */
   z-index: 990;
 }
 /* 4 */
@@ -4027,8 +4005,8 @@ ul.uk-nav-sub {
  * 1. Reset list
  */
 .uk-navbar-nav {
+  display: -webkit-flex;
   display: flex;
-  /* 1 */
   margin: 0;
   padding: 0;
   list-style: none;
@@ -4052,8 +4030,7 @@ ul.uk-nav-sub {
 .uk-navbar-nav > li > a,
 .uk-navbar-item,
 .uk-navbar-toggle {
-  /* 1 */
-  -webkit-display: inline-flex;
+  display: -webkit-inline-flex;
   display: inline-flex;
   -webkit-justify-content: center;
   justify-content: center;

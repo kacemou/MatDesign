@@ -3925,7 +3925,7 @@ ul.uk-nav-sub {
  * 1. Create position context to center navbar group
  */
 .uk-navbar {
-  -webkit-display: flex;
+  display: -webkit-flex;
   display: flex;
   /* 1 */
   position: relative;
@@ -3953,8 +3953,9 @@ ul.uk-nav-sub {
 .uk-navbar-center,
 .uk-navbar-center-left > *,
 .uk-navbar-center-right > * {
+  display: -webkit-flex;
   display: flex;
-  /* 1 */
+  -webkit-align-items: center;
   align-items: center;
 }
 /*

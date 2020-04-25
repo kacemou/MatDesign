@@ -2231,6 +2231,20 @@ select.uk-form-width-xsmall {
   padding-left: 15px;
   padding-right: 15px;
 }
+/* Phone landscape and bigger */
+@media (min-width: 640px) {
+  .uk-container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+/* Tablet landscape and bigger */
+@media (min-width: 960px) {
+  .uk-container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
 /*
  * Micro clearfix
  */
